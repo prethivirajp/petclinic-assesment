@@ -1,4 +1,4 @@
-Pre-requisites
+**Pre-requisites**
 
 1. Signup to Jfrog cloud free 14 days trail https://jfrog.com/start-free/
 2. Create a remote maven repository to resolve dependencies
@@ -8,20 +8,20 @@ Pre-requisites
 5. Configure Maven latest in the global settings
 6. Configure docker for building and pushing the images
 
-Create Pipeline
+**Create Pipeline**
 
 1. Create a declarative pipeline in Jenkins 
 2. Select the ‘Pipeline Script SCM and leave the script path to default / Jenkinsfile
 3. Save the pipeline and exit
 
-Update Maven global settings 
+**Update Maven global settings** 
 
 1. Go to remote repository created in Jfrog and click on Set Me Up
 2. Generate the token and settings
 3. Go to Jenkins server then go to 'maven_home/conf' location and update the settings.xml based on the previous step
 4. Now maven build is ready to pick the remote dependencies
 
-Results
+**Results**
 
 1. Run the pipeline
 2. Pipeline will Clone —> Compile —> Test —> Package the jar
