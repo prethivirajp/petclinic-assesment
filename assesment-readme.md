@@ -16,12 +16,14 @@ Create Pipeline
 
 Update Maven global settings 
 
-1. Go to JFrog and generate settings 
-2. Go maven_home/conf location and update the settings.xml based on the previous step
-3. Now maven build is ready to pick the remote dependencies
+1. Go to remote repository created in Jfrog and click on Set Me Up
+2. Generate the token and settings
+3. Go to Jenkins server then go to 'maven_home/conf' location and update the settings.xml based on the previous step
+4. Now maven build is ready to pick the remote dependencies
 
 Results
 
 1. Run the pipeline
 2. Pipeline will Clone —> Compile —> Test —> Package the jar
 3. Once the Jar is created pipleline will continue to Build Docker Image —> Push that to JFrog Artificatory
+4. Finally you can go to JFrog artficatory and check the docker image uploaded
