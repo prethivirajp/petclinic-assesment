@@ -27,4 +27,4 @@
 2. Pipeline will Clone —> Compile —> Test —> Package the jar
 3. Once the Jar is created pipleline will continue to Build Docker Image —> Push that to JFrog Artificatory
 4. Upon successfull run you will see the docker image uploaded to your JFrog Artifactory
-   **Image Name:** assesment1.jfrog.io/docket-petclinic-docker-local/docker-local:latest
+   (**Image Name:** assesment1.jfrog.io/docket-petclinic-docker-local/docker-local:latest)
